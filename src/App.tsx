@@ -15,6 +15,7 @@ import UserSatisfactionChart from "./app/components/UserSatisfactionChart";
 import UsageStatisticsChart from "./app/components/userStatisticsChart";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import "./index.scss";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
@@ -66,7 +67,7 @@ const App: React.FC = () => {
           style={{
             display: "flex",
             flexWrap: "nowrap",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
           }}
         >
           <p>Total queries: {insightsSummaryData?.total_queries}</p>

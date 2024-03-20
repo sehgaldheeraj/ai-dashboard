@@ -28,7 +28,7 @@ const LineChartComponent: React.FC<ResponseTimesProps> = ({
   weekData,
 }) => {
   return (
-    <div>
+    <div className="rtc_container">
       <h3>Day-wise Data</h3>
       <LineChart width={600} height={200} data={dayData}>
         <XAxis dataKey="date" />
